@@ -1,5 +1,6 @@
 import React from 'react'
 import { SlPlane } from 'react-icons/sl'
+import { AiOutlineClose, AiOutlineMenu } from 'react-icons/ai'
 
 const Nav = () => {
   return (
