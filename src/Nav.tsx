@@ -15,10 +15,10 @@ const Nav = () => {
         Planes <SlPlane className='text-green-600'/>
       </h2>
       <div className='hidden md:flex gap-5 items-center p-4'>
-        <p className='hover:scale-110'>Home</p>
-        <p className='hover:scale-110'>Safety</p>
-        <p className='hover:scale-110'>Book</p>
-        <p className='hover:scale-110'>About</p>
+        <p className='hover:scale-110 cursor-pointer'>Home</p>
+        <p className='hover:scale-110 cursor-pointer'>Safety</p>
+        <p className='hover:scale-110 cursor-pointer'>Book</p>
+        <p className='hover:scale-110 cursor-pointer'>About</p>
       </div>
       <div onClick={handleNav} className='block md:hidden m-2'>
         {nav ? < AiOutlineMenu size={30} /> : <AiOutlineClose size={30} />}
