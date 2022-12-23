@@ -1,10 +1,10 @@
 import React from 'react'
 
-type ImageType = string;
+type ImagePathType = string;
 
-const oldPlanePath: ImageType = require('./photos/old-plane.jpg')
-const crashedPlanePath: ImageType = require('./photos/crashed-plane.jpg')
-const burningPlanePath: ImageType = require('./photos/burning-plane.jpg')
+const oldPlaneImgPath: ImagePathType = require('./photos/old-plane.jpg')
+const crashedPlaneImgPath: ImagePathType = require('./photos/crashed-plane.jpg')
+const burningPlaneImgPath: ImagePathType = require('./photos/burning-plane.jpg')
 
 const photoStyles = 'object-cover w-1/3 h-[15rem]'
 
@@ -12,19 +12,19 @@ const ThreePhotos = () => {
   return (
     <div className='flex m-7 space-x-7'>
       <img
-        src={oldPlanePath}
+        src={oldPlaneImgPath}
         alt="Uncomfortably old plane"
         className={`${photoStyles}`}
       />
 
       <img
-        src={crashedPlanePath}
+        src={crashedPlaneImgPath}
         alt="Uncomfortably old plane"
         className={`${photoStyles}`}
       />
 
       <img
-        src={burningPlanePath}
+        src={burningPlaneImgPath}
         alt="Uncomfortably old plane"
         className={`${photoStyles}`}
       />
