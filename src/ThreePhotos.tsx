@@ -7,12 +7,14 @@ const crashedPlaneImgPath: ImagePathType = require('./photos/crashed-plane.jpg')
 const burningPlaneImgPath: ImagePathType = require('./photos/burning-plane.jpg')
 
 const photoStyles = 'object-cover w-full h-[15rem] rounded-xl'
-const photoDivStyles = 'w-1/3'
+const photoDivStyles = 'w-full'
 const photoTextStyles = 'm-3 text-center bold text-xl'
+
+const containerStyles = 'flex m-7 flex-col md:flex-row md:space-x-7'
 
 const ThreePhotos = () => {
   return (
-    <div className='flex m-7 space-x-7'>
+    <div className={`${containerStyles}`}>
       <figure className={`${photoDivStyles}`}>
         <img
           src={oldPlaneImgPath}
