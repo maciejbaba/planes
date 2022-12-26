@@ -1,0 +1,18 @@
+{
+  "files": {
+    "main.css": "/planes/static/css/main.05f1c19d.css",
+    "main.js": "/planes/static/js/main.e3533ddd.js",
+    "static/js/888.9df9ecd6.chunk.js": "/planes/static/js/888.9df9ecd6.chunk.js",
+    "static/media/crashed-plane.jpg": "/planes/static/media/crashed-plane.eb123b498f80ff580722.jpg",
+    "static/media/burning-plane.jpg": "/planes/static/media/burning-plane.0d0e7255adfb148f6e24.jpg",
+    "static/media/old-plane.jpg": "/planes/static/media/old-plane.3ca179fa2532d6c4d17e.jpg",
+    "index.html": "/planes/index.html",
+    "main.05f1c19d.css.map": "/planes/static/css/main.05f1c19d.css.map",
+    "main.e3533ddd.js.map": "/planes/static/js/main.e3533ddd.js.map",
+    "888.9df9ecd6.chunk.js.map": "/planes/static/js/888.9df9ecd6.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.05f1c19d.css",
+    "static/js/main.e3533ddd.js"
+  ]
+}
