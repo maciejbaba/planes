@@ -1,1 +1,6 @@
-project of a single page app using tailwind and react
+project of a single page app using tailwind and react and typescript
+
+link: https://maciek367.github.io/planes/
+
+in this project I was learning react, responsiveness, CI/CD, tailwind, typescript
+I had main problems with making it properly responsive, setting up basic CI/CD. also this hacky way of making tailwind classes in seperate variables was somewhat tricky
