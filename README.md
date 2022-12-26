@@ -1,4 +1,4 @@
-project of a single page app using tailwind and react and typescript
+project of a single page app using tailwind, react and typescript
 
 link: https://maciek367.github.io/planes/
 
