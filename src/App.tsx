@@ -7,7 +7,7 @@ const ThreePhotos = React.lazy(async () => await import('./ThreePhotos'))
 
 function App() {
   return (
-    <div>
+    <div className='h-full'>
       <Nav />
       <Hero />
       <ThreePhotos />
