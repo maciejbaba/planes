@@ -1,4 +1,5 @@
 import React from 'react'
+import { LazyLoadImage } from "react-lazy-load-image-component"
 
 type ImagePathType = string;
 
@@ -16,8 +17,9 @@ const ThreePhotos = () => {
   return (
     <div className={`${containerStyles}`}>
       <figure className={`${photoDivStyles}`}>
-        <img
+        <LazyLoadImage
           src={oldPlaneImgPath}
+          loading="lazy"
           alt="Uncomfortably old plane"
           className={`${photoStyles}`}
         />
@@ -27,8 +29,9 @@ const ThreePhotos = () => {
       </figure>
 
       <figure className={`${photoDivStyles}`}>
-        <img
+        <LazyLoadImage
           src={crashedPlaneImgPath}
+          loading="lazy"
           alt="Uncomfortably old plane"
           className={`${photoStyles}`}
         />
@@ -39,8 +42,9 @@ const ThreePhotos = () => {
       </figure>
 
       <figure className={`${photoDivStyles}`}>
-        <img
+        <LazyLoadImage
           src={burningPlaneImgPath}
+          loading="lazy"
           alt="Uncomfortably old plane"
           className={`${photoStyles}`}
         />
