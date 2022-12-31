@@ -1,15 +1,13 @@
 import React from 'react'
 import { LazyLoadImage } from "react-lazy-load-image-component"
 
-type ImagePathType = string;
-
-const oldPlaneImgPath: ImagePathType = require('./photos/old-plane.jpg')
-const crashedPlaneImgPath: ImagePathType = require('./photos/crashed-plane.jpg')
-const burningPlaneImgPath: ImagePathType = require('./photos/burning-plane.jpg')
+const oldPlaneImgPath: string = require('./photos/old-plane.jpg')
+const crashedPlaneImgPath: string = require('./photos/crashed-plane.jpg')
+const burningPlaneImgPath: string = require('./photos/burning-plane.jpg')
 
 const photoStyles = 'object-cover w-full h-[15rem] rounded-xl'
 const photoDivStyles = 'w-full'
-const photoTextStyles = 'm-3 text-center bold text-xl'
+const photoTextStyles = 'm-3 text-center text-white bold text-xl'
 
 const containerStyles = 'flex m-7 flex-col md:flex-row md:space-x-7'
 
@@ -37,7 +35,7 @@ const ThreePhotos = () => {
         />
 
         <figcaption className={`${photoTextStyles}`}>
-          Almost every of our planes has crashed at least once, insurance companies don't like us
+          Almost every of our planes has crashed at least once
         </figcaption>
       </figure>
 
