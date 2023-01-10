@@ -13,40 +13,40 @@ const containerStyles = 'flex m-7 flex-col md:flex-row md:space-x-7'
 
 const ThreePhotos = () => {
   return (
-    <div className={`${containerStyles}`}>
-      <figure className={`${photoDivStyles}`}>
+    <div className={containerStyles}>
+      <figure className={photoDivStyles}>
         <LazyLoadImage
           src={oldPlaneImgPath}
           loading="lazy"
           alt="Uncomfortably old plane"
-          className={`${photoStyles}`}
+          className={photoStyles}
         />
-        <figcaption className={`${photoTextStyles}`}>
+        <figcaption className={photoTextStyles}>
           Our planes are incredibly old because we are incredibly cheap
         </figcaption>
       </figure>
 
-      <figure className={`${photoDivStyles}`}>
+      <figure className={photoDivStyles}>
         <LazyLoadImage
           src={crashedPlaneImgPath}
           loading="lazy"
           alt="Uncomfortably old plane"
-          className={`${photoStyles}`}
+          className={photoStyles}
         />
 
-        <figcaption className={`${photoTextStyles}`}>
+        <figcaption className={photoTextStyles}>
           Almost every of our planes has crashed at least once
         </figcaption>
       </figure>
 
-      <figure className={`${photoDivStyles}`}>
+      <figure className={photoDivStyles}>
         <LazyLoadImage
           src={burningPlaneImgPath}
           loading="lazy"
           alt="Uncomfortably old plane"
-          className={`${photoStyles}`}
+          className={photoStyles}
         />
-        <figcaption className={`${photoTextStyles}`}>Very often our planes catch on fire because we don't care about your safety</figcaption>
+        <figcaption className={photoTextStyles}>Very often our planes catch on fire because we don't care about your safety</figcaption>
       </figure>
     </div>
   )

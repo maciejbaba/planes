@@ -2,11 +2,17 @@ import React, { useState } from 'react'
 import { SlPlane } from 'react-icons/sl'
 import { AiOutlineClose, AiOutlineMenu } from 'react-icons/ai'
 
+const menuHidden = 'fixed left-[-100%] uppercase p-4 top-0 w-[40%] bg-black border-green-700 border-r h-full ease-in-out duration-300'
+const menuShown = 'md:hidden fixed uppercase p-4 top-0 left-0 w-1/2 bg-black border-green-700 border-r h-full ease-in-out duration-300'
+
+const headerLinkStyles = 'hover:scale-110 cursor-pointer'
+const menuLinkStyles = 'hover:scale-110 border-b border-green-700'
+
 const Nav = () => {
-  const [nav, setNav] = useState(true)
+  const [showMenu, setShowMenu] = useState(true)
 
   const handleNav = () => {
-    setNav(!nav)
+    setShowMenu(!showMenu)
   }
 
   return (
@@ -15,25 +21,25 @@ const Nav = () => {
         Planes <SlPlane className='text-green-700'/>
       </h2>
       <div className='hidden md:flex gap-5 items-center p-4'>
-        <p className='hover:scale-110 cursor-pointer'>Home</p>
-        <p className='hover:scale-110 cursor-pointer'>Safety</p>
-        <p className='hover:scale-110 cursor-pointer'>Book</p>
-        <p className='hover:scale-110 cursor-pointer'>About</p>
+        <p className={headerLinkStyles}>Home</p>
+        <p className={headerLinkStyles}>Safety</p>
+        <p className={headerLinkStyles}>Book</p>
+        <p className={headerLinkStyles}>About</p>
       </div>
       <div onClick={handleNav} className='block md:hidden m-2'>
-        {nav ? < AiOutlineMenu size={30} /> : <AiOutlineClose size={30} />}
-      </div>                            {/* TODO change these inline styles to two separate vaiables */}
-      <div className={nav ? 'fixed left-[-100%] uppercase p-4 top-0 w-[40%] bg-black border-green-700 border-r h-full ease-in-out duration-300' : 'md:hidden fixed uppercase p-4 top-0 left-0 w-[40%] bg-black border-green-700 border-r h-full ease-in-out duration-300'}>
-        <ul>
+        {showMenu ? < AiOutlineMenu size={30} /> : <AiOutlineClose size={30} />}
+      </div>
+      <div className={showMenu ? `${menuHidden}` : `${menuShown}`}>
+        <ul className='flex flex-col gap-3 text-lg'>
           <li>
             <h2 className='h-10 w-full flex gap-3 uppercase text-xl text-white items-center'>
               Planes <SlPlane className='text-green-700'/>
             </h2>
           </li>
-          <li className='hover:scale-110 border-b border-green-700'>Home</li>
-          <li className='hover:scale-110 border-b border-green-700'>Safety</li>
-          <li className='hover:scale-110 border-b border-green-700'>Book</li>
-          <li className='hover:scale-110'>About</li>
+          <li className={menuLinkStyles}>Home</li>
+          <li className={menuLinkStyles}>Safety</li>
+          <li className={menuLinkStyles}>Book</li>
+          <li className={menuLinkStyles}>About</li>
         </ul>
       </div>
     </div>
